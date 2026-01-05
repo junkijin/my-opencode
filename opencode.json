@@ -13,20 +13,18 @@
   "provider": {
     "google": {
       "whitelist": [
-        "gemini-3-flash",
-        "gemini-3-pro",
+        "gemini-3-flash-preview",
+        "gemini-3-pro-preview",
       ],
       "models": {
-        "gemini-3-flash": {
-          "id": "gemini-3-flash-preview",
-          "name": "Gemini 3 Flash (OAuth)",
+        "gemini-3-flash-preview": {
+          "name": "Gemini 3 Flash",
           "options": {
             "includeThoughts": true,
           },
         },
-        "gemini-3-pro": {
-          "id": "gemini-3-pro-preview",
-          "name": "Gemini 3 Pro (OAuth)",
+        "gemini-3-pro-preview": {
+          "name": "Gemini 3 Pro",
           "options": {
             "includeThoughts": true,
           },
