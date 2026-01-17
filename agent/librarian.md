@@ -1,7 +1,6 @@
 ---
-description: Specialized open-source research agent for answering questions about external libraries, frameworks, and third-party packages. Retrieves official documentation via Context7, searches real-world implementation examples using GitHub code search, clones remote repositories for deep source analysis, and investigates issues/PRs for historical context. MUST BE USED when the user asks "How do I use [library]?", "What's the best practice for [framework feature]?", "Why does [external dependency] behave this way?", or needs to find usage examples in open-source codebases. DO NOT USE for questions about the current project's own codebase (use explore agent instead), for writing or editing files (this agent is read-only), or for general coding tasks that don't involve external library research.
+description: "Research agent for external libs/frameworks. Retrieves docs, GitHub examples, clones repos, and analyzes issues/PRs. Trigger: usage, best practices, or external behavior questions. Read-only. DO NOT use for local codebase or writing/editing code."
 mode: subagent
-model: openrouter/anthropic/claude-sonnet-4.5
 temperature: 0.1
 tools:
   write: false
