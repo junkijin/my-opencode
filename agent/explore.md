@@ -1,7 +1,6 @@
 ---
-description: Codebase search specialist for complex queries ("Where is X?", "Find code doing Z"). Best for multiple search angles, unfamiliar structures, and cross-layer patterns. Supports thoroughness levels (quick/medium/very thorough). Read-only. Avoid for simple grep/glob or known paths.
+description: "Codebase search specialist for complex queries (\"Where is X?\", \"Find code doing Z\"). Best for multiple search angles, unfamiliar structures, and cross-layer patterns. Supports thoroughness levels (quick/medium/very thorough). Read-only. Avoid for simple grep/glob or known paths."
 mode: subagent
-temperature: 0.1
 tools:
   write: false
   edit: false

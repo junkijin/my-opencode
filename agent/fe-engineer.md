@@ -1,5 +1,5 @@
 ---
-description: UI/UX specialist for visual/aesthetic frontend changes (layout, styling, animations, responsiveness) in React, Vue, Angular, HTML/CSS. Use for UI polish even without mockups; avoid for non-visual logic, state management, API calls, or business rules.
+description: "UI/UX specialist for visual/aesthetic frontend changes (layout, styling, animations, responsiveness) in React, Vue, Angular, HTML/CSS. Use for UI polish even without mockups; avoid for non-visual logic, state management, API calls, or business rules."
 mode: subagent
 model: google/gemini-3-flash-preview
 ---

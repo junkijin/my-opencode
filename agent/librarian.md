@@ -1,7 +1,6 @@
 ---
 description: "Research agent for external libs/frameworks. Retrieves docs, GitHub examples, clones repos, and analyzes issues/PRs. Trigger: usage, best practices, or external behavior questions. Read-only. DO NOT use for local codebase or writing/editing code."
 mode: subagent
-temperature: 0.1
 tools:
   write: false
   edit: false
