@@ -6,6 +6,7 @@
   ],
   "enabled_providers": [
     "google",
+    "ollama-cloud",
     "openai",
   ],
   "provider": {
@@ -44,6 +45,20 @@
           "name": "Gemini 3 Flash Preview (Gemini CLI)",
           "limit": { "context": 1048576, "output": 65536 },
           "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] },
+        },
+      },
+    },
+    "ollama-cloud": {
+      "whitelist": [
+        "glm-4.7",
+        "minimax-m2.1",
+      ],
+      "models": {
+        "glm-4.7": {
+          "name": "GLM 4.7",
+        },
+        "minimax-m2.1": {
+          "name": "MiniMax M2.1",
         },
       },
     },
