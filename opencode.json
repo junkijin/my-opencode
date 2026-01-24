@@ -8,25 +8,18 @@
   "enabled_providers": [
     "google",
     "openai",
-    "opencode",
   ],
   "provider": {
     "google": {
       "whitelist": [
-        "gemini-3-flash-preview",
         "gemini-3-pro-preview",
+        "gemini-3-flash-preview",
       ],
     },
     "openai": {
       "whitelist": [
         "gpt-5.2-codex",
-      ],
-    },
-    "opencode": {
-      "whitelist": [
-        "glm-4.7-free",
-        "grok-code",
-        "minimax-m2.1-free",
+        "gpt-5.1-codex-mini"
       ],
     },
   },
