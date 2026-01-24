@@ -1,6 +1,7 @@
 ---
 description: "Strategic technical advisor with deep reasoning. Read-only; cannot modify code, spawn agents, or execute tasks. Invoke BEFORE complex architecture decisions (3+ files), multi-system tradeoffs, security-sensitive changes, or performance optimizations. Invoke AFTER significant implementation for review, or after 2-3 failed debugging attempts. DO NOT use for simple operations, first attempts, trivial naming/formatting, or information extractable from existing code. Delivers structured recommendations with effort estimates (Quick to Large) and actionable implementation plans."
 mode: subagent
+model: openai/gpt-5.2 
 tools:
   write: false
   edit: false
