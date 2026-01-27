@@ -14,10 +14,30 @@
       "whitelist": [
         "antigravity-claude-opus-4-5-thinking",
         "antigravity-claude-sonnet-4-5-thinking",
-        "gemini-3-pro-preview",
-        "gemini-3-flash-preview",
+        "antigravity-gemini-3-pro",
+        "antigravity-gemini-3-flash",
       ],
       "models": {
+        "antigravity-gemini-3-pro": {
+          "name": "Gemini 3 Pro (Antigravity)",
+          "limit": { "context": 1048576, "output": 65535 },
+          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] },
+          "variants": {
+            "low": { "thinkingLevel": "low" },
+            "high": { "thinkingLevel": "high" },
+          },
+        },
+        "antigravity-gemini-3-flash": {
+          "name": "Gemini 3 Flash (Antigravity)",
+          "limit": { "context": 1048576, "output": 65536 },
+          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] },
+          "variants": {
+            "minimal": { "thinkingLevel": "minimal" },
+            "low": { "thinkingLevel": "low" },
+            "medium": { "thinkingLevel": "medium" },
+            "high": { "thinkingLevel": "high" },
+          },
+        },
         "antigravity-claude-opus-4-5-thinking": {
           "name": "Claude Opus 4.5 Thinking (Antigravity)",
           "limit": { "context": 200000, "output": 64000 },
@@ -46,8 +66,8 @@
     },
     "openrouter": {
       "whitelist": [
+        "moonshotai/kimi-k2.5",
         "z-ai/glm-4.7",
-        "minimax/minimax-m2.1",
       ],
     },
   },
