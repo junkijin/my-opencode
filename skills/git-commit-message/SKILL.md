@@ -1,6 +1,6 @@
 ---
 name: git-commit-message
-description: Draft Git commit messages when the user asks to commit or wants a commit message suggestion.
+description: Always load before any commit to draft Git commit messages when the user asks to commit or wants a commit message suggestion.
 ---
 
 # Git Commit Message Best Practices
