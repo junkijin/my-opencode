@@ -67,6 +67,7 @@
     "openrouter": {
       "whitelist": [
         "moonshotai/kimi-k2.5",
+        "x-ai/grok-4.1-fast",
         "z-ai/glm-4.7",
       ],
     },

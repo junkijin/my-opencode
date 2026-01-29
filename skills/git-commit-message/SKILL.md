@@ -1,6 +1,6 @@
 ---
 name: git-commit-message
-description: Write well-crafted Git commit messages following best practices. Use when creating commits, reviewing commit history, or when the user needs help writing clear, consistent commit messages that communicate context effectively.
+description: Draft Git commit messages when the user asks to commit or wants a commit message suggestion.
 ---
 
 # Git Commit Message Best Practices
