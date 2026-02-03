@@ -94,7 +94,7 @@ Configured in `antigravity.json`:
 ├── skills/                  # Reusable skills (e.g., commit messaging)
 ├── plugins/                 # Local plugin stubs (if needed)
 ├── tools/                   # Tool metadata or helper assets
-├── AGENTS.md                # Agent behavior rules for this repo
+├── AGENTS.md                # Agent behavior rules (currently empty)
 ├── antigravity.json         # Antigravity auth settings
 ├── opencode.json            # Main OpenCode config
 ├── package.json             # Plugin dependency
