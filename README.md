@@ -10,10 +10,7 @@ Personal OpenCode configuration for agents, commands, skills, and provider/plugi
 
 ## Agents
 
-- `agents/orchestrator.md`: read-only coordination agent for multi-step tasks.
-- `agents/ui-engineer.md`: design-focused agent for UI/UX work.
-- `agents/librarian.md`: OSS documentation and code-evidence specialist.
-- `agents/oracle.md`: architecture and risk advisor for high-stakes decisions.
+No custom agents are configured in this repository.
 
 ## Skills
 
