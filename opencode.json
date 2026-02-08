@@ -66,7 +66,6 @@
     },
     "openrouter": {
       "whitelist": [
-        "stepfun/step-3.5-flash:free",
         "moonshotai/kimi-k2.5",
         "qwen/qwen3-coder-next",
         "x-ai/grok-4.1-fast",
@@ -83,15 +82,14 @@
             },
           },
         },
-        "stepfun/step-3.5-flash:free": {
-          "name": "Step 3.5 Flash (free)",
-          "limit": { "context": 256000, "output": 256000 },
-          "modalities": { "input": ["text"], "output": ["text"] },
-        }
       },
     },
   },
   "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+    },
     "gh-grep": {
       "type": "remote",
       "url": "https://mcp.grep.app",
