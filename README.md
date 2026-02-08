@@ -14,13 +14,14 @@ No custom agents are configured in this repository.
 
 ## Skills
 
-- `skills/git-commit-message/`: drafting commit messages when committing.
+- `skills/git-commit-message-best-practices/`: drafting commit messages when committing.
+- `skills/agent-browser/`: browser automation workflows, references, and templates.
 - `skills/deep-research/`: research pipeline with methodology, templates, validation scripts, and tests.
 - `skills/skill-creator/`: skill authoring/packaging guidance with scripts and references.
 
 ## Commands
 
-- `commands/commit.md`: commit staged changes when present; otherwise stage all changes before committing.
+- `commands/git/commit.md`: commit staged changes when present; otherwise stage all changes before committing.
 
 ## Prerequisites
 
@@ -53,9 +54,9 @@ bun install
 Configured in `opencode.json`:
 
 - `enabled_providers`: `google`, `openai`, `openrouter`.
-- `provider.google.models`: Antigravity-wrapped Gemini 3 models with custom limits, modalities, and thinking variants.
+- `provider.google.models`: Antigravity-wrapped Gemini 3 and Claude 4.5 models with custom limits, modalities, and thinking variants.
 - `provider.openai.whitelist`: `gpt-5.2-codex`, `gpt-5.2`.
-- `provider.openrouter.whitelist`: `moonshotai/kimi-k2.5`, `x-ai/grok-4.1-fast`, `z-ai/glm-4.7`.
+- `provider.openrouter.whitelist`: `moonshotai/kimi-k2.5`, `qwen/qwen3-coder-next`, `x-ai/grok-4.1-fast`.
 
 ### Plugins
 
@@ -68,6 +69,7 @@ Configured in `opencode.json`:
 
 Configured in `opencode.json`:
 
+- `context7` remote MCP at `https://mcp.context7.com/mcp`
 - `gh-grep` remote MCP at `https://mcp.grep.app`
 - `tavily` remote MCP at `https://mcp.tavily.com/mcp`
 
