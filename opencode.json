@@ -1,106 +1,135 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": [
-    "opencode-antigravity-auth@latest",
-    "opencode-pty@latest",
-  ],
-  "enabled_providers": [
-    "google",
-    "openai",
-    "openrouter",
-  ],
+  "small_model": "opencode/big-pickle",
+  "plugin": ["opencode-antigravity-auth@latest", "opencode-pty@latest"],
+  "enabled_providers": ["google", "openai", "opencode", "openrouter"],
   "provider": {
     "google": {
       "whitelist": [
         "antigravity-claude-opus-4-5-thinking",
         "antigravity-claude-sonnet-4-5-thinking",
         "antigravity-gemini-3-pro",
-        "antigravity-gemini-3-flash",
+        "antigravity-gemini-3-flash"
       ],
       "models": {
-        "antigravity-gemini-3-pro": {
-          "name": "Gemini 3 Pro (Antigravity)",
-          "limit": { "context": 1048576, "output": 65535 },
-          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] },
-          "variants": {
-            "low": { "thinkingLevel": "low" },
-            "high": { "thinkingLevel": "high" },
-          },
-        },
-        "antigravity-gemini-3-flash": {
-          "name": "Gemini 3 Flash (Antigravity)",
-          "limit": { "context": 1048576, "output": 65536 },
-          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] },
-          "variants": {
-            "minimal": { "thinkingLevel": "minimal" },
-            "low": { "thinkingLevel": "low" },
-            "medium": { "thinkingLevel": "medium" },
-            "high": { "thinkingLevel": "high" },
-          },
-        },
         "antigravity-claude-opus-4-5-thinking": {
           "name": "Claude Opus 4.5 Thinking (Antigravity)",
-          "limit": { "context": 200000, "output": 64000 },
-          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] },
-          "variants": {
-            "low": { "thinkingConfig": { "thinkingBudget": 8192 } },
-            "max": { "thinkingConfig": { "thinkingBudget": 32768 } },
+          "limit": {
+            "context": 200000,
+            "output": 64000
           },
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"]
+          },
+          "variants": {
+            "low": {
+              "thinkingConfig": {
+                "thinkingBudget": 8192
+              }
+            },
+            "max": {
+              "thinkingConfig": {
+                "thinkingBudget": 32768
+              }
+            }
+          }
         },
         "antigravity-claude-sonnet-4-5-thinking": {
           "name": "Claude Sonnet 4.5 Thinking (Antigravity)",
-          "limit": { "context": 200000, "output": 64000 },
-          "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] },
-          "variants": {
-            "low": { "thinkingConfig": { "thinkingBudget": 8192 } },
-            "max": { "thinkingConfig": { "thinkingBudget": 32768 } },
+          "limit": {
+            "context": 200000,
+            "output": 64000
           },
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"]
+          },
+          "variants": {
+            "low": {
+              "thinkingConfig": {
+                "thinkingBudget": 8192
+              }
+            },
+            "max": {
+              "thinkingConfig": {
+                "thinkingBudget": 32768
+              }
+            }
+          }
         },
-      },
+        "antigravity-gemini-3-pro": {
+          "name": "Gemini 3 Pro (Antigravity)",
+          "limit": {
+            "context": 1048576,
+            "output": 65535
+          },
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"]
+          },
+          "variants": {
+            "low": {
+              "thinkingLevel": "low"
+            },
+            "high": {
+              "thinkingLevel": "high"
+            }
+          }
+        },
+        "antigravity-gemini-3-flash": {
+          "name": "Gemini 3 Flash (Antigravity)",
+          "limit": {
+            "context": 1048576,
+            "output": 65536
+          },
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"]
+          },
+          "variants": {
+            "minimal": {
+              "thinkingLevel": "minimal"
+            },
+            "low": {
+              "thinkingLevel": "low"
+            },
+            "medium": {
+              "thinkingLevel": "medium"
+            },
+            "high": {
+              "thinkingLevel": "high"
+            }
+          }
+        }
+      }
     },
     "openai": {
-      "whitelist": [
-        "gpt-5.2-codex",
-        "gpt-5.2",
-      ],
+      "whitelist": ["gpt-5.2-codex", "gpt-5.2"]
+    },
+    "opencode": {
+      "whitelist": ["big-pickle", "glm-4.7-free", "kimi-k2.5-free", "minimax-m2.1-free"]
     },
     "openrouter": {
-      "whitelist": [
-        "moonshotai/kimi-k2.5",
-        "qwen/qwen3-coder-next",
-        "x-ai/grok-4.1-fast",
-      ],
-      "models": {
-        "qwen/qwen3-coder-next": {
-          "name": "Qwen3 Coder Next",
-          "limit": { "context": 262144, "output": 65535 },
-          "modalities": { "input": ["text"], "output": ["text"] },
-          "options": {
-            "provider": {
-              "temperature": 1,
-              "top_p": 0.95,
-            },
-          },
-        },
-      },
-    },
+      "whitelist": ["x-ai/grok-4.1-fast"]
+    }
   },
   "mcp": {
     "context7": {
       "type": "remote",
-      "url": "https://mcp.context7.com/mcp",
+      "url": "https://mcp.context7.com/mcp"
     },
     "gh-grep": {
       "type": "remote",
-      "url": "https://mcp.grep.app",
+      "url": "https://mcp.grep.app"
     },
     "tavily": {
       "type": "remote",
       "url": "https://mcp.tavily.com/mcp",
-      "oauth": {},
-    },
+      "oauth": {}
+    }
   },
   "tools": {
-    "google_search": false,
-  },
+    "google_search": false
+  }
 }
